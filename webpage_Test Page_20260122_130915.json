@@ -1,0 +1,26 @@
+{
+  "type": "webpage",
+  "title": "Test Page",
+  "url": "https://example.com",
+  "timestamp": "2026-01-22T13:09:15.347419",
+  "metadata": {
+    "description": "",
+    "keywords": "",
+    "author": "",
+    "canonical_url": "",
+    "language": "",
+    "charset": "",
+    "viewport": {},
+    "user_agent": "",
+    "referrer": "",
+    "links_count": 0,
+    "images_count": 0
+  },
+  "content": {
+    "html": "<html><body>Test</body></html>",
+    "text": "Test content",
+    "readable": ""
+  },
+  "links": [],
+  "images": []
+}

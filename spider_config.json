@@ -1,0 +1,28 @@
+{
+  "spider": {
+    "max_depth": 3,
+    "max_pages": 1000,
+    "delay": 1.0,
+    "user_agent": "SpiderEntity/1.0 (Hybrid VCS)",
+    "respect_robots": true,
+    "start_urls": [
+      "https://example.com"
+    ]
+  },
+  "deployment": {
+    "port": 8080,
+    "host": "localhost",
+    "log_level": "INFO",
+    "database_path": "spider_deployment/data/spider.db"
+  },
+  "monitoring": {
+    "enable_metrics": true,
+    "metrics_port": 9090,
+    "health_check_interval": 30
+  },
+  "vcs_integration": {
+    "enable_versioning": true,
+    "commit_frequency": "daily",
+    "backup_strategy": "incremental"
+  }
+}
