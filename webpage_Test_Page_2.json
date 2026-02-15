@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/docs/api",
+  "title": "API Reference - Example Documentation",
+  "content": "<!DOCTYPE html>\n<html>\n<head>\n  <title>API Reference</title>\n</head>\n<body>\n  <h1>API Reference</h1>\n  <p>Complete API documentation for the Example Platform.</p>\n  <h2>Core Classes</h2>\n  <h3>Platform</h3>\n  <p>Main platform class for managing operations.</p>\n  <h4>Methods</h4>\n  <ul>\n    <li><code>initialize(config=None)</code> - Initialize the platform</li>\n    <li><code>run()</code> - Start the platform</li>\n    <li><code>stop()</code> - Stop the platform gracefully</li>\n  </ul>\n  <h3>Configuration</h3>\n  <p>Configuration management class.</p>\n  <h4>Methods</h4>\n  <ul>\n    <li><code>load(path)</code> - Load configuration from file</li>\n    <li><code>save(path)</code> - Save configuration to file</li>\n    <li><code>get(key)</code> - Get configuration value</li>\n    <li><code>set(key, value)</code> - Set configuration value</li>\n  </ul>\n  <h2>Examples</h2>\n  <pre>from example import Platform, Configuration\n\nconfig = Configuration()\nconfig.set('debug', True)\n\nplatform = Platform()\nplatform.initialize(config)\nplatform.run()</pre>\n</body>\n</html>",
+  "text_content": "API Reference Complete API documentation for the Example Platform. Core Classes Platform Main platform class for managing operations. Methods initialize(config=None) - Initialize the platform run() - Start the platform stop() - Stop the platform gracefully Configuration Configuration management class. Methods load(path) - Load configuration from file save(path) - Save configuration to file get(key) - Get configuration value set(key, value) - Set configuration value Examples from example import Platform, Configuration config = Configuration() config.set('debug', True) platform = Platform() platform.initialize(config) platform.run()",
+  "links": [],
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "fetched_at": "2024-01-15T10:31:00.000000",
+  "content_hash": "b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7"
+}

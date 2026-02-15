@@ -1,0 +1,36 @@
+{
+  "max_depth": 2,
+  "max_pages": 50,
+  "delay_seconds": 1,
+  "user_agent": "HybridVCS-Spider/1.0",
+  "allowed_domains": [
+    "example.com",
+    "docs.example.com"
+  ],
+  "url_patterns": [],
+  "exclude_patterns": [
+    "/login",
+    "/logout",
+    "/admin",
+    ".pdf",
+    ".zip"
+  ],
+  "follow_external": false,
+  "timeout": 30,
+  "max_retries": 3,
+  "respect_robots_txt": true,
+  "save_html": true,
+  "save_text_only": false,
+  "extract_metadata": true,
+  "capture_screenshots": false,
+  "notification": {
+    "enabled": false,
+    "email": "",
+    "webhook_url": ""
+  },
+  "schedule": {
+    "enabled": false,
+    "cron": "0 */6 * * *",
+    "timezone": "UTC"
+  }
+}
