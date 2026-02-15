@@ -139,3 +139,6 @@ repos/
 vcs_data/
 spider_data/
 crawl_cache/
+
+# Test/demo repositories
+demo_repos/
