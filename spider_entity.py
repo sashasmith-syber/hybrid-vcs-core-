@@ -169,21 +169,25 @@ class SpiderEntity:
             
             # Check if content changed
             changed = True
+            is_new = url_hash not in self.crawl_cache
+            
             if url_hash in self.crawl_cache:
                 cached_hash = self.crawl_cache[url_hash]
                 if cached_hash == page_data['content_hash']:
                     changed = False
-            else:
-                self.stats['pages_new'] += 1
             
             if changed:
                 # Save to VCS
                 content = json.dumps(page_data, indent=2).encode('utf-8')
                 self.vcs.add_file(self.vcs_repo, filename, content)
-                self.crawl_cache[url_hash] = page_data['content_hash']
                 
-                if url_hash in [k for k, v in self.crawl_cache.items() if k != url_hash]:
+                # Update statistics
+                if is_new:
+                    self.stats['pages_new'] += 1
+                else:
                     self.stats['pages_changed'] += 1
+                
+                self.crawl_cache[url_hash] = page_data['content_hash']
                 
                 return True
             
